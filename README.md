@@ -154,22 +154,35 @@ No errors were returned when passing through the PEP8 linter validator.
 ### Deployment 
 
 1- Login or Sign Up to GitHub.
+
 2- Go to project repository.
+
 3- Select Settings
+
 4- Click on "Pages" in the left side of the panel.
-5- Bellow Build and deployment and bellow SOURCE choose  Main .
+
+5- Bellow Build and deployment and bellow SOURCE choose  Main.
+
 6- Choose which folder to deploy from, usually "/root".
+
 7- Click "Save", then WAIT for it to be deployed. 
+
 8- Your URL will be displayed above "Source
 
 To deploy the website to Heroku, follow these steps:
 
 1- Create or log in to your Heroku account.
+
 2-Create a new app on Heroku with a unique name.
+
 3-Set the buildpacks for the app in the correct order. In this case, set the buildpacks to Python and NodeJS.
+
 4-Connect your app to the GitHub repository that contains your website's code.
+
 5-Config variable for PORT with a value of 8000.
+
 6-In the deployment tab of your Heroku app, you have the option to choose between automatic deployment or manual deployment. If you select automatic deployment, the app will automatically update with each new push to the repository.
+
 7-If you prefer manual deployment, you can choose that option and manually trigger the deployment whenever you want, typically after making certain changes to the code.
 - - -
 
