@@ -1,7 +1,6 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
+"""
+"""
 
 def display_rules():
     """
@@ -15,39 +14,68 @@ def display_rules():
     print("3. After each guess, the computer will provide feedback: 'Too low' or 'Too high'.")
     print("4. Keep guessing until you guess the correct number.")
     print("===================================\n")
+    """
+    """
 
 def play_game():
     """
     Play the guessing game.
     """
-    # Generate a random number between 1 and 100
+     
     number = random.randint(1, 100)
+    """
+    Generate a random number between 1 and 100
+    """
     attempts = 0
 
     print("Welcome to the Guessing Game!")
     print("Try to guess the number between 1 and 100.")
 
     while True:
-        # Get the user's guess
+        
         guess = input("Enter your guess: ")
+        """
+        Get the user's guess
+        """
 
         if not guess.isdigit():
-            # Check if the input is a valid number
+            """
+             Check if the input is a valid number
+            """ 
             print("Invalid input. Please enter a valid number.")
             continue
 
         guess = int(guess)
+        """
+        tranform guess into a integer
+        """
+
         attempts += 1
+        """
+        increase the attempts
+        """
 
         if guess < 1 or guess > 100:
-            # Check if the guess is within the valid range
+            """
+             Check if the guess is within the valid range
+            """
+             
             print("Number must be between 1-100, please guess again.")
         elif guess < number:
+            """
+            block is executed when the user's guess is less than the randomly generated number
+            """
             print("Too low. Try again!")
         elif guess > number:
+            """
+            block is executed when the user's guess is greater than the randomly generated number
+            """
             print("Too high. Try again!")
         else:
-            # Correct guess
+            """
+            block is executed when the user's guess is equal to the randomly generated number
+            """
+            
             print(f"Congratulations! You guessed the number in {attempts} attempts.")
             break
 
@@ -63,17 +91,25 @@ def start_game():
     print("Press 'Q' to quit the game.")
 
     while True:
-        # Get the user's choice
+        """
+        Get the user's choice
+        """
         choice = input("Enter your choice:").upper()
 
         if choice == "R":
-            # Display the rules
+            """
+            Display the rules
+            """
             display_rules()
         elif choice == "P":
-            # Play the game
+            """
+             Play the game
+            """
             play_game()
         elif choice == "Q":
-            # Quit the game
+            """
+            Quit the game
+            """
             print("Exiting the game.")
             break
         else:
