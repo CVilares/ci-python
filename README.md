@@ -76,6 +76,7 @@ The code structure and user experience provided in the code ensure that the user
 
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
+-   [Herokuapp:] for deployment.
 - [Am I Responsive:](http://ami.responsivedesign.is) Checking the responsiveness.
 - [W3Schools:](https://www.w3schools.com/) To learn , test and train.
 -   [Code Institute](https://codeinstitute.net/global/) To learn and train
@@ -86,58 +87,42 @@ The code structure and user experience provided in the code ensure that the user
 
 ### Features
 
-- Displaying Questions:
+1-Random Number Generation: The code uses the random.randint() function to generate a random number between 1 and 100. This random number is the target number that the player needs to guess.
 
-The displayQuestion function retrieves the current question from the questions array and displays it on the screen.
-
-- Handling User Answers:
-
-The checkAnswer function is called when the user selects an answer. It compares the user's answer with the correct answer for the current question and updates the score accordingly.
-If the user's answer is correct, the score is incremented, and a message is logged to the console.
-If the user's answer is wrong, the wrong answer count is incremented. If the count reaches 3, the showDisappointment function is called to redirect the user to the "end.html" page.
-The score display is updated using the updateScore function.
-
-- Moving to the Next Question:
-
-The nextQuestion function increments the currentPos variable to move to the next question. If the end of the questions array is reached, it wraps around to the first question.
-
-- Checking Total Score:
-
-The checkTotalScore function checks if the user's total score reaches 5. If it does, the showCongratulations function is called to redirect the user to the "congratulations.html" page.
-
-- Updating Score Display:
-
-The updateScore function retrieves the score element from the HTML document and updates its content with the current score.
-
-![Reactions](/assets/images/sum.png)
-![Reactions](/assets/images/sdois.png)
-
-- Displaying Random Quote:
-
-The displayRandomQuote function selects a random quote from the quotes array and displays it on the screen. It includes a random quote and the corresponding character.
-
-![Random Quote](/assets/images/random.png)
-
-- Setting Up Answer Listeners:
-
-The setupAnswerListeners function adds event listeners to the answer elements. When an answer is clicked, the checkAnswer function is called with the corresponding answer index.
-
-- Starting the Quiz:
-
-The startQuiz function is called initially to begin the quiz. It displays the first question, sets up the answer listeners, and displays a random quote.
-
-- Showing Congratulations and Disappointment Pages with a Try Again button that leads you to the start main page.
-
-The showCongratulations function redirects the user to the "congratulations.html" page when the total score reaches 5.
-The showDisappointment function redirects the user to the "end.html" page when the wrong answer count reaches 3.
-![Reactions](/assets/images/congs.png)
-![Reactions](/assets/images/end.png)
-
-
-
-- Rules button that leads you to the quiz rules and to start game button.
-![Reactions](/assets/images/rules.png)
 ![Reactions](/assets/images/ruless.png)
+
+2-Game Loop: The code uses a while loop to keep the game running until the player guesses the correct number. The loop continues until the player's guess matches the target number.
+
+![Reactions](/assets/images/ruless.png)
+
+3-User Input: The code prompts the player to enter their guess using the input() function. The player's input is then validated to ensure it is a valid number between 1 and 100.
+
+![Reactions](/assets/images/ruless.png)
+
+4-Feedback: After each guess, the code provides feedback to the player. If the guess is too low, it displays the message "Too low. Try again!" If the guess is too high, it displays "Too high. Try again!"
+
+![Reactions](/assets/images/ruless.png)
+
+5-Attempts Count: The code keeps track of the number of attempts made by the player using the attempts variable. It increments the attempts variable after each guess.
+
+![Reactions](/assets/images/ruless.png)
+
+6-Game Over: When the player guesses the correct number, the code displays a congratulatory message along with the number of attempts it took. The game then ends.
+
+![Reactions](/assets/images/ruless.png)
+
+7-Game Menu: The code provides a simple menu for the player to choose options. The menu allows the player to read the game rules, start playing the game, or quit the game.
+
+![Reactions](/assets/images/ruless.png)
+
+8-Rule Display: The code includes a function called display_rules() that prints the rules of the game when the player selects the option to read the rules.
+
+![Reactions](/assets/images/ruless.png)
+
+9-User Experience: The code includes user-friendly messages to welcome the player, prompt for input, and provide instructions. It also handles invalid input gracefully and prompts the player to enter a valid number.
+
+![Reactions](/assets/images/rules.png)
+
 
 - - -
 
