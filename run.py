@@ -10,18 +10,19 @@ def display_rules():
     print("===================================")
     print("1. The computer will randomly choose a number between 1 and 100.")
     print("2. You have to guess the chosen number.")
-    print("3. After each guess, the computer will provide feedback: 'Too low' or 'Too high'.")
+    print("3. The computer provides feedback:'Too low' or 'Too high'.")
     print("4. Keep guessing until you guess the correct number.")
     print("===================================\n")
     """
     print the game rules
     """
 
+
 def play_game():
+
     """
     Play the guessing game.
     """
-     
     number = random.randint(1, 100)
     """
     Generate a random number between 1 and 100
@@ -42,9 +43,8 @@ def play_game():
 
         if not guess.isdigit():
             """
-            The isdigit() method returns True if all the characters are digits, otherwise False.
              Check if the input is a valid number
-            """ 
+             """
             print("Invalid input. Please enter a valid number.")
             continue
 
@@ -62,24 +62,25 @@ def play_game():
             """
              Check if the guess is within the valid range
             """
-             
             print("Number must be between 1-100, please guess again.")
         elif guess < number:
             """
-            block is executed when the user's guess is less than the randomly generated number
+            block is executed when the user's guess is less
+            than the randomly generated number
             """
             print("Too low. Try again!")
         elif guess > number:
             """
-            block is executed when the user's guess is greater than the randomly generated number
+            block is executed when the user's guess is greater than
+            the randomly generated number
             """
             print("Too high. Try again!")
         else:
             """
-            block is executed when the user's guess is equal to the randomly generated number
+            block is executed when the user's guess is equal to the
+            randomly generated number
             """
-            
-            print(f"Congratulations! You guessed the number in {attempts} attempts.")
+            print(f"Congratulations!You took {attempts} attempts.")
             break
 
     print("The game is over.")
@@ -87,11 +88,13 @@ def play_game():
     When the loop is over this message will be printed
     """
 
+
 def start_game():
     """
     Start the guessing game.
     """
     print("Welcome to the Guessing Game!")
+
     print("Press 'R' to read the rules.")
     print("Press 'P' to play the game.")
     print("Press 'Q' to quit the game.")
@@ -120,5 +123,6 @@ def start_game():
             break
         else:
             print("Invalid choice. Please try again.")
+
 
 start_game()

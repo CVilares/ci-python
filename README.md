@@ -15,12 +15,7 @@ The purpose of the game is for the player to use their logic and intuition to ma
 The code provided implements a basic version of the guessing number game, where the computer generates a random number, the player enters their guesses, and the computer provides feedback until the correct number is guessed.
 
 
-
-
-
-
-![responsive image](/assets/responsive.png)
-
+![intro image](/assets/intro.png)
 
 ## Demo
 
@@ -40,13 +35,13 @@ Welcome to [Guessing Game](https://ci-python.herokuapp.com/)
 * [Deployment](#deployment)  
 * [Responsiveness](#responsiveness)
 * [Other tests](#Other-tests)
-* [Fork and Clone](#fork-and-clone)  
+* [heroku](#heroku)  
 * [Credits](#credits)
 
 - - - 
 ### User Experience UX
 
-The provided code offers a simple and straightforward user experience for the guessing game. Let's break down the user experience step by step:
+Let's break down the user experience step by step:
 
 1-The game starts with a welcome message, introducing the user to the Guessing Game.
 
@@ -128,70 +123,46 @@ The code structure and user experience provided in the code ensure that the user
 
 ### Potential Implementations
 
+-  Difficulty Levels: Add different difficulty levels to the game, where the range of numbers to guess from can vary. For example, you can have an easy mode with numbers between 1 and 50, a medium mode with numbers between 1 and 100, and a hard mode with numbers between 1 and 1000.
 
+-  Limit the Number of Attempts: Set a limit on the number of attempts the player has to guess the number. If they exceed the limit without guessing correctly, they lose the game.
 
--  Timer: Implement a timer to add a time constraint for answering each question. This adds an element of urgency and can make the quiz more challenging.
+-  Score Tracking: Keep track of the player's scores or points based on the number of attempts they take to guess the number. Assign higher scores for fewer attempts to encourage replayability and competition.
 
+-  Multiplayer Mode: Implement a multiplayer mode where multiple players can take turns guessing the number, and the player with the fewest attempts wins.
 
-- Progress Bar: Add a visual progress bar to indicate how far the user is in the quiz. It helps provide a sense of completion and motivates users to continue.
-
-- High Scores: Implement a high score feature where users can save their scores and compare them with other players. This can encourage competition and replayability.
-
--  Score Multipliers: Assign score multipliers for consecutive correct answers. For example, if the user answers two questions correctly in a row, their score for the third question could be doubled.
-
-- Hint System: Provide users with the option to request hints for difficult questions. You can display additional information or eliminate one or more incorrect answer choices.
-
-- Share Results: Enable users to share their quiz results on social media platforms or via email. This can encourage others to take the quiz and increase its reach.
+-  Time-Based Challenges: Add a time limit for each guess, challenging the player to make their guess within a specified time frame. If they fail to do so, they lose the game.
 
 - - -
 
 ### Browser Compatibility in progress 
 
-- This pages were successfully tested on Safari ,Firefox and Google Chrome browsers.
+- This pages were successfully tested on Firefox and Google Chrome browsers.
 
 ### Validator Testing 
-HTML
 
-- All HTML tested separeted,no errors were returned when passing through the official W3C validator.
+- https://pep8ci.herokuapp.com/#
 
-![HTML Page](/assets/images/htlmvalidation.png)
+No errors were returned when passing through the PEP8 linter validator.
+
+![PEP](/assets/pep.png)
   
-
-CSS
-No errors were found when passing through the official (Jigsaw) validator
-
-  * CSS Page
-![CSS Page](/assets/images/cssvalid.png)
-
-Javascript
-- No errors were returned when passing through the JSHint validator.
-![JavaScript Page](/assets/images/javas.png)
 - - -
 
-### Color Scheme 
-
-- The color scheme chosen for this quiz is inspired by the football club's main colors, predominantly green and white, with hints of yellow. These colors reflect the club's identity and serve as the main theme throughout the quiz. The use of green symbolizes the club's vitality, growth, and connection with nature, while white represents purity, clarity, and the club's commitment to fair play. The subtle touches of yellow add a vibrant and energetic element, complementing the overall design and enhancing the visual appeal. This color combination creates a visually pleasing and cohesive experience, immersing users in the spirit of the football club as they engage with the quiz.
-
-## Typography
-The font roboto was used for the entire quiz.
-
-- - -
 ### Deployment 
 
-1. Login or Sign Up to GitHub.
-2. Go to project repository.
-3. Select Settings
-4. Click on "Pages" in the left side of the panel.
-5. Bellow Build and deployment and bellow SOURCE choose  Main .
-6. Choose which folder to deploy from, usually "/root".
-7. Click "Save", then WAIT for it to be deployed. 
-8. Your URL will be displayed above "Source
+1- Login or Sign Up to GitHub.
+2- Go to project repository.
+3- Select Settings
+4- Click on "Pages" in the left side of the panel.
+5- Bellow Build and deployment and bellow SOURCE choose  Main .
+6- Choose which folder to deploy from, usually "/root".
+7- Click "Save", then WAIT for it to be deployed. 
+8- Your URL will be displayed above "Source
 
 - - -
 
 ### Responsiveness 
-
-Chrome developer tool have been used to check successfully the responsivness in multiple kind of devices.
 
 The responsiveness was also tested successfully on :
 
@@ -203,6 +174,8 @@ The responsiveness was also tested successfully on :
   768x1024px scaled down to scale(0.219)
 - Mobile
   320x480px scaled down to scale(0.219)
+
+  ![responsive image](/assets/responsive.png)
 
   
 - - -
@@ -218,24 +191,23 @@ The responsiveness was also tested successfully on :
 
 
 - - -
-### Fork and Clone 
-**Fork**
-1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/CVilares/quizJavascript).
-3. Click the Fork button in the top right corner.
+### heroku
 
-**Clone**
-1. Login or Sign Up to GitHub.
-2. Open the project [repository](https://github.com/CVilares/quizJavascript).
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
-4. Open the terminal in the code editor of your choice and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+To deploy the website to Heroku, follow these steps:
+
+1- Create or log in to your Heroku account.
+2-Create a new app on Heroku with a unique name.
+3-Set the buildpacks for the app in the correct order. In this case, set the buildpacks to Python and NodeJS.
+4-Connect your app to the GitHub repository that contains your website's code.
+5-Config variable for PORT with a value of 8000.
+6-In the deployment tab of your Heroku app, you have the option to choose between automatic deployment or manual deployment. If you select automatic deployment, the app will automatically update with each new push to the repository.
+7-If you prefer manual deployment, you can choose that option and manually trigger the deployment whenever you want, typically after making certain changes to the code.
 
 - - -
 
 ### Credits 
 
-- This project was inspired on https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+- Code Institute
 - A special thank you to my mentors, family,friends.
 - Slack comunity
 
