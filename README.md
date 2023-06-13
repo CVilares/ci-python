@@ -1,4 +1,4 @@
-# Guessing number game
+# Guessing Game
 
 The computer selects a random number between a specified range. For example, it may choose a number between 1 and 100.
 
@@ -19,12 +19,12 @@ The code provided implements a basic version of the guessing number game, where 
 
 
 
-![responsive image](/assets/images/rsp.png)
+![responsive image](/assets/responsive.png)
 
 
 ## Demo
 
-Welcome to [Sporting Quiz](https://cvilares.github.io/quizJavascript/)
+Welcome to [Guessing Game](https://ci-python.herokuapp.com/)
 
 - - -
 
@@ -69,36 +69,18 @@ The provided code offers a simple and straightforward user experience for the gu
 The code structure and user experience provided in the code ensure that the user can easily understand and interact with the game. The game offers clear instructions, validates user input, and provides appropriate feedback to guide the user towards the correct guess.
 
 
-### Interactive Quiz Experience
 
-Navigation: The user can navigate through the quiz using the provided options and buttons. They can progress to the next question, submit their answers, and receive feedback on their performance.
-
-Question Display: The quiz displays questions one at a time, allowing the user to focus on each question individually. This approach helps prevent overwhelming the user with too much information at once.
-
-Answer Selection: The user can select their answer from the provided options. This allows for easy interaction and ensures that the user understands the available choices.
-
-Immediate Feedback: After the user selects an answer, the quiz provides immediate feedback. 
-
-Scoring and Progress Tracking: The quiz keeps track of the user's score. The user can see their current score, allowing them to track their progress throughout the quiz.
-
-Random Quotes: The inclusion of random quotes adds an extra element of interest and variety to the quiz. It provides an opportunity to engage the user with quotes related to the quiz's theme.
-
-Success and Failure Pages: The quiz incorporates separate pages for success (congratulations) and failure (disappointment) scenarios. If the user achieves a high score, they are redirected to the success page, acknowledging their achievement. Conversely, if the user fails to answer correctly within the given attempts, they are redirected to the failure page, providing closure to their quiz experience.
 
 - - - 
  ##  Technologies Used
 
--   [Google Fonts:](https://fonts.google.com/) 
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
 - [Am I Responsive:](http://ami.responsivedesign.is) Checking the responsiveness.
 - [W3Schools:](https://www.w3schools.com/) To learn , test and train.
 -   [Code Institute](https://codeinstitute.net/global/) To learn and train
 -   [Stack Overflow](https://stackoverflow.com/) To learn and train
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-
+-   [Python](https://pt.wikipedia.org/wiki/Python)
 - - - 
 
 
