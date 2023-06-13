@@ -3,25 +3,38 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
 
-def guessing_game():
+def display_rules():
     """
-    Main function of the guessing game.
+    Display the rules of the game.
     """
+    print("===================================")
+    print("Guessing Game - Rules")
+    print("===================================")
+    print("1. The computer will randomly choose a number between 1 and 100.")
+    print("2. You have to guess the chosen number.")
+    print("3. After each guess, the computer will provide feedback: 'Too low' or 'Too high'.")
+    print("4. Keep guessing until you guess the correct number.")
+    print("===================================\n")
+
+def play_game():
+    """
+    Play the guessing game.
+    """
+    # Generate a random number between 1 and 100
     number = random.randint(1, 100)
-    """
-    The 'random.randint(a, b)' function is used to generate a random integer between 'a' and 'b'.
-    In this case, it generates a random number between 1 and 100 and assigns it to the 'number' variable.
-    """
     attempts = 0
-    """
-    This line attempts = 0 initializes the attempts variable and sets its initial value to 0.
-    """
+
+    print("Welcome to the Guessing Game!")
+    print("Try to guess the number between 1 and 100.")
 
     while True:
         # Get the user's guess
         guess = input("Enter your guess: ")
 
-        
+        if not guess.isdigit():
+            # Check if the input is a valid number
+            print("Invalid input. Please enter a valid number.")
+            continue
 
         guess = int(guess)
         attempts += 1
@@ -40,4 +53,30 @@ def guessing_game():
 
     print("The game is over.")
 
-guessing_game()
+def start_game():
+    """
+    Start the guessing game.
+    """
+    print("Welcome to the Guessing Game!")
+    print("Press 'R' to read the rules.")
+    print("Press 'P' to play the game.")
+    print("Press 'Q' to quit the game.")
+
+    while True:
+        # Get the user's choice
+        choice = input("Enter your choice:").upper()
+
+        if choice == "R":
+            # Display the rules
+            display_rules()
+        elif choice == "P":
+            # Play the game
+            play_game()
+        elif choice == "Q":
+            # Quit the game
+            print("Exiting the game.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+start_game()
