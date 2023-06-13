@@ -35,7 +35,6 @@ Welcome to [Guessing Game](https://ci-python.herokuapp.com/)
 * [Deployment](#deployment)  
 * [Responsiveness](#responsiveness)
 * [Other tests](#Other-tests)
-* [heroku](#heroku)  
 * [Credits](#credits)
 
 - - - 
@@ -84,40 +83,43 @@ The code structure and user experience provided in the code ensure that the user
 
 1-Random Number Generation: The code uses the random.randint() function to generate a random number between 1 and 100. This random number is the target number that the player needs to guess.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/randomnumber.png)
 
 2-Game Loop: The code uses a while loop to keep the game running until the player guesses the correct number. The loop continues until the player's guess matches the target number.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/feedback.png)
 
 3-User Input: The code prompts the player to enter their guess using the input() function. The player's input is then validated to ensure it is a valid number between 1 and 100.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/validation.png)
 
 4-Feedback: After each guess, the code provides feedback to the player. If the guess is too low, it displays the message "Too low. Try again!" If the guess is too high, it displays "Too high. Try again!"
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/gameover.png)
 
 5-Attempts Count: The code keeps track of the number of attempts made by the player using the attempts variable. It increments the attempts variable after each guess.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/feedback.png)
 
 6-Game Over: When the player guesses the correct number, the code displays a congratulatory message along with the number of attempts it took. The game then ends.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/over.png)
 
 7-Game Menu: The code provides a simple menu for the player to choose options. The menu allows the player to read the game rules, start playing the game, or quit the game.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/menu.png)
 
 8-Rule Display: The code includes a function called display_rules() that prints the rules of the game when the player selects the option to read the rules.
 
-![Reactions](/assets/images/ruless.png)
+![Reactions](/assets/rule.png)
 
 9-User Experience: The code includes user-friendly messages to welcome the player, prompt for input, and provide instructions. It also handles invalid input gracefully and prompts the player to enter a valid number.
 
-![Reactions](/assets/images/rules.png)
+![Reactions](/assets/welcome.png)
 
+10- Play Again Option: After each round of the game, when the user guesses the correct number or decides to quit the game, the program returns to the start menu. From the start menu, the user can choose to play the game again by selecting the "P" option.Once the user selects the "P" option, a new round of the game starts, and the user can continue guessing numbers to try and find the correct answer. This process can be repeated as many times as the user wants by selecting the "P" option from the start menu.
+
+![Reactions](/assets/again.png)
 
 - - -
 
@@ -160,6 +162,15 @@ No errors were returned when passing through the PEP8 linter validator.
 7- Click "Save", then WAIT for it to be deployed. 
 8- Your URL will be displayed above "Source
 
+To deploy the website to Heroku, follow these steps:
+
+1- Create or log in to your Heroku account.
+2-Create a new app on Heroku with a unique name.
+3-Set the buildpacks for the app in the correct order. In this case, set the buildpacks to Python and NodeJS.
+4-Connect your app to the GitHub repository that contains your website's code.
+5-Config variable for PORT with a value of 8000.
+6-In the deployment tab of your Heroku app, you have the option to choose between automatic deployment or manual deployment. If you select automatic deployment, the app will automatically update with each new push to the repository.
+7-If you prefer manual deployment, you can choose that option and manually trigger the deployment whenever you want, typically after making certain changes to the code.
 - - -
 
 ### Responsiveness 
@@ -179,7 +190,7 @@ The responsiveness was also tested successfully on :
 
   
 - - -
-### Other tests 
+### Other tests framework????
 
 
 * Background and foreground colors have a sufficient contrast ratio.
@@ -188,20 +199,6 @@ The responsiveness was also tested successfully on :
 * When you hover over  buttons with your mouse, the color or opacity change to give a visual indication to the user.
 * Hover on touch-sensitive devices, such as mobile devices, may not work in the same way as on devices with a mouse.
 * Consistent Design: By specifying a specific font family, you can ensure that the text content on your website or application appears consistently across different devices and platforms.
-
-
-- - -
-### heroku
-
-To deploy the website to Heroku, follow these steps:
-
-1- Create or log in to your Heroku account.
-2-Create a new app on Heroku with a unique name.
-3-Set the buildpacks for the app in the correct order. In this case, set the buildpacks to Python and NodeJS.
-4-Connect your app to the GitHub repository that contains your website's code.
-5-Config variable for PORT with a value of 8000.
-6-In the deployment tab of your Heroku app, you have the option to choose between automatic deployment or manual deployment. If you select automatic deployment, the app will automatically update with each new push to the repository.
-7-If you prefer manual deployment, you can choose that option and manually trigger the deployment whenever you want, typically after making certain changes to the code.
 
 - - -
 
