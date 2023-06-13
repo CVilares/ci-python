@@ -1,6 +1,5 @@
 import random
-"""
-"""
+
 
 def display_rules():
     """
@@ -15,6 +14,7 @@ def display_rules():
     print("4. Keep guessing until you guess the correct number.")
     print("===================================\n")
     """
+    print the game rules
     """
 
 def play_game():
@@ -32,7 +32,9 @@ def play_game():
     print("Try to guess the number between 1 and 100.")
 
     while True:
-        
+        """
+        this loop will repeat untill we get the correct guess
+        """
         guess = input("Enter your guess: ")
         """
         Get the user's guess
@@ -40,6 +42,7 @@ def play_game():
 
         if not guess.isdigit():
             """
+            The isdigit() method returns True if all the characters are digits, otherwise False.
              Check if the input is a valid number
             """ 
             print("Invalid input. Please enter a valid number.")
@@ -80,6 +83,9 @@ def play_game():
             break
 
     print("The game is over.")
+    """
+    When the loop is over this message will be printed
+    """
 
 def start_game():
     """
