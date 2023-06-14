@@ -1,18 +1,22 @@
 # Guessing Game
 
-The computer selects a random number between a specified range. For example, it may choose a number between 1 and 100.
+The Guessing Game is a simple game where the computer randomly chooses a number between a specified range, and the player's objective is to guess that number. Here's how the game works:
 
-The player is then prompted to enter their guess for the chosen number.
+At the beginning of the game, the computer displays the rules and prompts the player to make a choice.
 
-After the player enters their guess, the computer provides feedback to help the player narrow down their guess. If the player's guess is lower than the chosen number, the computer will say "Too low." If the guess is higher, the computer will say "Too high." This feedback guides the player towards the correct number.
+If the player chooses to play, they can select from three difficulty levels: Easy, Medium, and Pro. Each level corresponds to a different range of numbers to guess from.
 
-The player continues to guess and receive feedback until they guess the correct number.
+Once the player selects a level, the game begins. The computer generates a random number within the chosen range.
 
-Once the player guesses the correct number, the game ends, and the player is notified of their success. The game may also display the number of attempts it took the player to guess correctly.
+The player is prompted to enter their guess. If the input is not a valid number, they are asked to enter a valid number.
 
-The purpose of the game is for the player to use their logic and intuition to make educated guesses and eventually arrive at the correct number. The game can be repeated multiple times, allowing the player to improve their guessing skills and challenge themselves to guess the number in fewer attempts.
+After each guess, the computer provides feedback to the player. If the guess is too low, the computer displays "Too low. Try again!" If the guess is too high, the computer displays "Too high. Try again!"
 
-The code provided implements a basic version of the guessing number game, where the computer generates a random number, the player enters their guesses, and the computer provides feedback until the correct number is guessed.
+The player continues guessing until they guess the correct number. Once the correct number is guessed, the computer displays "Congratulations! You took X attempts," where X represents the number of attempts made by the player.
+
+The game ends, and the player is given the option to play again or quit. If they choose to play again, they can select a new level. If they choose to quit, the game exits.
+
+The game provides an interactive and challenging experience for the player, encouraging them to guess the correct number within the given range with as few attempts as possible.
 
 
 ![intro image](/assets/intro.png)
@@ -40,27 +44,31 @@ Welcome to [Guessing Game](https://ci-python.herokuapp.com/)
 - - - 
 ### User Experience UX
 
-Let's break down the user experience step by step:
+Let's break the user experience step by step:
 
-1-The game starts with a welcome message, introducing the user to the Guessing Game.
+1. The game starts with a friendly welcome message, clearly stating the name of the game and its objective.
 
-2-The user is presented with three options: 'R' to read the rules, 'P' to play the game, and 'Q' to quit the game.
+2. The user is presented with a clean and organized menu, featuring three options: 'R' to read the rules, 'P' to play the game, and 'Q' to quit.
 
-3-If the user selects 'R' to read the rules, the rules of the game are displayed on the screen, providing clear instructions on how to play.
+3. If the user selects 'R' to read the rules, the rules of the game are displayed using clear and concise language, ensuring they are easy to understand.
 
-4-If the user selects 'P' to play the game, the game begins. The user is prompted to enter their guess for the chosen number.
+4. When the user chooses 'P' to play the game, the difficulty levels are presented with descriptive labels ('Easy,' 'Medium,' 'Pro') and their respective number ranges.
 
-5-The user's input is validated to ensure it is a valid number. If the input is invalid, an error message is displayed, and the user is asked to enter a valid number.
+5. After selecting a difficulty level, a new game session starts, and the user receives a personalized message inviting them to guess a number within the specified range.
 
-6-If the input is a valid number, the game checks if the guess is within the valid range of 1-100. If the guess is outside the range, an error message is displayed, and the user is asked to guess again within the valid range.
+6. The input validation process is enhanced to provide immediate feedback when an invalid entry is made. Clear error messages guide the user to enter a valid numeric guess.
 
-7-If the guess is within the valid range, the game provides feedback to the user. If the guess is lower than the chosen number, the message "Too low. Try again!" is displayed. If the guess is higher, the message "Too high. Try again!" is displayed.
+7. If the user's guess is outside the valid range, a specific error message notifies them of the valid range, prompting another guess.
 
-8-The user continues to guess and receive feedback until they guess the correct number. Once the correct number is guessed, a congratulatory message is displayed, informing the user of the number of attempts it took them to guess correctly.
+8. Each time the user makes a guess, the feedback provided by the game ('Too low' or 'Too high') is displayed prominently, ensuring easy visibility.
 
-9-After the game ends, the user is informed that the game is over.
+9. The user is encouraged to continue guessing until they find the correct number, with the game keeping track of their attempts and providing a sense of progress.
 
-The code structure and user experience provided in the code ensure that the user can easily understand and interact with the game. The game offers clear instructions, validates user input, and provides appropriate feedback to guide the user towards the correct guess.
+10. Once the user successfully guesses the number, a celebratory message acknowledges their achievement, accompanied by the number of attempts taken.
+
+11. A closing message signifies the end of the game, providing closure and thanking the user for their participation.
+
+The Guessing Game creates a user-friendly experience that guides the player through the rules, offers clear instructions and feedback, and keeps them engaged and motivated to reach the correct solution.
 
 
 
@@ -70,7 +78,7 @@ The code structure and user experience provided in the code ensure that the user
 
 -   [Git:](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
 -   [GitHub:](https://github.com/) is used as the respository for the projects code after being pushed from Git.
--   [Herokuapp:] for deployment.
+-   [Herokuapp:](https://www.heroku.com/) for deployment.
 - [Am I Responsive:](http://ami.responsivedesign.is) Checking the responsiveness.
 - [W3Schools:](https://www.w3schools.com/) To learn , test and train.
 -   [Code Institute](https://codeinstitute.net/global/) To learn and train
@@ -81,7 +89,7 @@ The code structure and user experience provided in the code ensure that the user
 
 ### Features
 
-1-Random Number Generation: The code uses the random.randint() function to generate a random number between 1 and 100. This random number is the target number that the player needs to guess.
+1-Random Number Generation: The code uses the random.randint() function to generate a random number between 1 and 300. This random number is the target number that the player needs to guess.
 
 ![Reactions](/assets/randomnumber.png)
 
@@ -121,11 +129,12 @@ The code structure and user experience provided in the code ensure that the user
 
 ![Reactions](/assets/again.png)
 
+11- Levels: The code offers three levels of difficulty for the player to choose from: Easy, Medium, and Pro. Each level has a different range of numbers to guess from, providing varying degrees of challenge.
+
+![Reactions](/assets/again.png)
 - - -
 
 ### Potential Implementations
-
--  Difficulty Levels: Add different difficulty levels to the game, where the range of numbers to guess from can vary. For example, you can have an easy mode with numbers between 1 and 50, a medium mode with numbers between 1 and 100, and a hard mode with numbers between 1 and 1000.
 
 -  Limit the Number of Attempts: Set a limit on the number of attempts the player has to guess the number. If they exceed the limit without guessing correctly, they lose the game.
 
@@ -161,7 +170,7 @@ No errors were returned when passing through the PEP8 linter validator.
 
 4- Click on "Pages" in the left side of the panel.
 
-5- Bellow Build and deployment and bellow SOURCE choose  Main.
+5- Bellow Build and deployment and bellow SOURCE choose  Main from the drop list.
 
 6- Choose which folder to deploy from, usually "/root".
 
