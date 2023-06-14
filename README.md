@@ -19,7 +19,7 @@ The game ends, and the player is given the option to play again or quit. If they
 The game provides an interactive and challenging experience for the player, encouraging them to guess the correct number within the given range with as few attempts as possible.
 
 
-![intro image](/assets/intro.png)
+![intro image](/assets/main.png)
 
 ## Demo
 
@@ -131,7 +131,7 @@ The Guessing Game creates a user-friendly experience that guides the player thro
 
 11- Levels: The code offers three levels of difficulty for the player to choose from: Easy, Medium, and Pro. Each level has a different range of numbers to guess from, providing varying degrees of challenge.
 
-![Reactions](/assets/again.png)
+![Reactions](/assets/level.png)
 - - -
 
 ### Potential Implementations
