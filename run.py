@@ -32,10 +32,12 @@ def play_game(A, B):
     attempts = 0
 
     print("Welcome to the Guessing Game!")
+    print("")
     print(f"Try to guess the number between {A} and {B}.")
 
     while True:
         # This loop will repeat until we get the correct guess
+        print("")
         guess = input("Enter your guess: ")
         # Get the user's guess
 
@@ -52,6 +54,7 @@ def play_game(A, B):
 
         if guess < A or guess > B:
             print(f"Number must be between {A}-{B}, please guess again.")
+            # 
         elif guess < number:
             # Block is executed when the user's guess is less than the randomly generated number
             print("Too low. Try again!")
@@ -83,6 +86,9 @@ def start_game():
         print("")
 
         choice = input("Enter your choice:").upper().strip()
+        # this methods will convert all characters
+        # into uppercase and remove whitespaces
+
         print("")
         if choice == "R":
             display_rules()
@@ -90,11 +96,13 @@ def start_game():
             print("")
             print("Select the level:")
             print("")
-            print("'E' to Easy (1-50)")
-            print("'M' to Medium (1-100)")
-            print("'P' to Pro (1-300)")
+            print("'E' to play Easy (1-50)")
+            print("'M' to play Medium (1-100)")
+            print("'P' to play Pro (1-300)")
             print("")
-            level_choice = input("Enter the level number: ").upper().strip()
+            level_choice = input("Enter the level: ").upper().strip()
+            # this methods will convert all characters
+            # into uppercase and remove whitespaces
 
             if level_choice == "E":
                 play_game(1, 50)
