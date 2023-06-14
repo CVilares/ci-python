@@ -25,6 +25,8 @@ The game provides an interactive and challenging experience for the player, enco
 
 Welcome to [Guessing Game](https://ci-python.herokuapp.com/)
 
+[GitHub Repo](https://github.com/CVilares/ci-python)
+
 - - -
 
 # Contents
@@ -97,7 +99,7 @@ The Guessing Game creates a user-friendly experience that guides the player thro
 
 ![Reactions](/assets/feedback.png)
 
-3-User Input: The code prompts the player to enter their guess using the input() function. The player's input is then validated to ensure it is a valid number between 1 and 100.
+3-User Input: The code prompts the player to enter their guess using the input() function. The player's input is then validated to ensure it is a valid number between 1 and 300 depending on the choosen level.
 
 ![Reactions](/assets/validation.png)
 
