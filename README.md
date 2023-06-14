@@ -162,7 +162,7 @@ No errors were returned when passing through the PEP8 linter validator.
   
 - - -
 
-### Deployment 
+### Deployment Github and Heroku app
 
 1- Login or Sign Up to GitHub.
 
@@ -180,7 +180,7 @@ No errors were returned when passing through the PEP8 linter validator.
 
 8- Your URL will be displayed above "Source
 
-To deploy the website to Heroku, follow these steps:
+To deploy the website to HEROKU, follow these steps:
 
 1- Create or log in to your Heroku account.
 

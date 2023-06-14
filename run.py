@@ -119,6 +119,9 @@ def start_game():
         else:
             print("")
             print("Invalid choice. Please try again.")
+            continue
+
+        clear_screen    
 
 
 start_game()
